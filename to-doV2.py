@@ -29,7 +29,6 @@ def updateFile() :
 
     print("File updated.")
 
-# TODO: Why is this here? Check later.
 status = (f"Awaiting task.")
 
 
@@ -77,7 +76,7 @@ def deleteTask() :
         return
 
 
-    if deletedTask < len(tasks) :
+    if deletedTask-1 < len(tasks) :
         status = (f'Task #{deletedTask} "{tasks[deletedTask-1]}" has been deleted.')
         tasks.pop(deletedTask-1)
     else :
